@@ -1,0 +1,147 @@
+/* ============================================================
+   participate.css — Standalone stylesheet for participate.html
+   Matches techbook4u's blue & white premium theme.
+   ============================================================ */
+
+:root {
+  --blue-900: #0A2A66;
+  --blue-600: #1257C4;
+  --blue-400: #2B8CFF;
+  --cyan-400: #00B4FF;
+  --blue-50:  #EEF4FF;
+  --white:    #FFFFFF;
+  --ink-soft: #4A5670;
+  --line:     #DCE5F5;
+  --shadow-lg: 0 20px 45px rgba(10, 42, 102, 0.16);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { overflow-x: hidden; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #10192E;
+  background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 45%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; box-sizing: border-box; }
+
+/* ---------- Header ---------- */
+.site-header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.9);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--blue-900);
+}
+.logo-bracket { color: var(--cyan-400); }
+.back-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue-600);
+}
+.back-link:hover { color: var(--cyan-400); }
+
+/* ---------- Main content ---------- */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.status-card {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.status-icon {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.status-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 9vw, 3.6rem);
+  color: var(--blue-900);
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+  background: linear-gradient(135deg, var(--blue-600), var(--cyan-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.status-desc {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.status-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue-600), var(--cyan-400));
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(18, 87, 196, 0.25);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-outline {
+  background: var(--white);
+  color: var(--blue-600);
+  border: 1.5px solid var(--blue-600);
+}
+.btn-outline:hover { background: var(--blue-50); }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 480px) {
+  .status-icon { font-size: 3.6rem; }
+  .status-actions { flex-direction: column; align-items: stretch; }
+}
