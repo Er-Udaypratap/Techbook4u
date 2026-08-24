@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>techbook4u | Courses, MCQs, Interview Prep, Challenges &amp; Jobs</title>
+  <meta name="description" content="techbook4u is a free educational platform — learn programming &amp; web development, practice subject-wise MCQs, prepare for interviews, join coding challenges, and explore job opportunities, all in one place.">
+  <meta name="keywords" content="techbook4u, learn programming online, web development course, MCQ practice, interview tips, coding challenge, jobs for freshers, aptitude practice">
+  <meta name="author" content="techbook4u">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.techbook4u.com/">
+
+  <!-- ===== Open Graph / Social ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="techbook4u | Learn. Practice. Compete. Get Hired.">
+  <meta property="og:description" content="Free courses, subject-wise MCQs, interview preparation, coding challenges and job opportunities — all in one place.">
+  <meta property="og:url" content="https://www.techbook4u.com/">
+  <meta property="og:image" content="https://www.techbook4u.com/assets/og-image.jpg">
+  <meta property="og:site_name" content="techbook4u">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="techbook4u | Learn. Practice. Compete. Get Hired.">
+  <meta name="twitter:description" content="Free courses, MCQs, interview tips, coding challenges and jobs for students &amp; job seekers.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230A2A66%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22%2300B4FF%22 text-anchor=%22middle%22 font-family=%22monospace%22>&lt;/&gt;</text></svg>">
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "techbook4u",
+    "url": "https://www.techbook4u.com/",
+    "description": "Free educational platform for programming courses, MCQ practice, interview preparation, coding challenges and job opportunities.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="techbook4u home">
+        <span class="logo-bracket">&lt;</span>techbook4u<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="courses/index.html">Courses</a></li>
+          <li><a href="mcq/index.html">MCQs</a></li>
+          <li><a href="interview/index.html">Interview</a></li>
+          <li><a href="challenge/index.html">Challenge</a></li>
+          <li><a href="jobs/index.html">Jobs</a></li>
+          <li><a href="other-courses/index.html">Other Courses</a></li>
+          <li class="nav-share-item"><a href="#" id="shareLink" class="nav-share-link" target="_blank" rel="noopener noreferrer">📤 Share on WhatsApp</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Learn free. Practice daily. Get hired.</p>
+          <h1>Turn <span class="highlight">study time</span> into <span class="highlight">interview offers</span>.</h1>
+          <p class="hero-desc">
+            techbook4u helps students and job seekers learn programming &amp; web development,
+            sharpen skills with subject-wise MCQs, prepare for interviews, join coding challenges,
+            and discover real job opportunities — all in one place.
+          </p>
+          <div class="hero-cta">
+            <a href="courses/index.html" class="btn btn-primary">Start Learning <span aria-hidden="true">→</span></a>
+            <a href="challenge/index.html" class="btn btn-ghost">View Challenges</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>50+</strong><span>Free Courses</span></li>
+            <li><strong>2,000+</strong><span>MCQs</span></li>
+            <li><strong>Weekly</strong><span>Challenges</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="code-window-title">practice.js</span>
+            </div>
+            <pre class="code-window-body"><code><span class="c-key">function</span> <span class="c-fn">crackInterview</span>() {
+  <span class="c-key">const</span> skills = [<span class="c-str">"DSA"</span>, <span class="c-str">"Web Dev"</span>, <span class="c-str">"Aptitude"</span>];
+  <span class="c-key">let</span> confidence = <span class="c-num">0</span>;
+
+  skills.<span class="c-fn">forEach</span>(skill =&gt; {
+    confidence += <span class="c-fn">practice</span>(skill);
+  });
+
+  <span class="c-key">return</span> confidence &gt;= <span class="c-num">100</span>
+    ? <span class="c-str">"Hired ✅"</span>
+    : <span class="c-fn">crackInterview</span>();
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HUB / EXPLORE SECTION ===================== -->
+    <section class="hub-section" id="explore">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Everything in one place</p>
+          <h2>Explore techbook4u</h2>
+          <p class="section-desc">Six ways to learn, practice, and land your next opportunity — pick where you want to start.</p>
+        </div>
+
+        <div class="hub-grid">
+
+          <a href="courses/index.html" class="hub-box">
+            <span class="hub-box-badge">Free</span>
+            <div class="hub-box-icon" aria-hidden="true">📘</div>
+            <h3>Courses</h3>
+            <p>Structured, beginner-friendly courses in Python and Web Development to build real skills from scratch.</p>
+            <span class="hub-box-arrow">Browse Courses <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="mcq/index.html" class="hub-box">
+            <span class="hub-box-badge">300+ Qs</span>
+            <div class="hub-box-icon" aria-hidden="true">📝</div>
+            <h3>MCQs</h3>
+            <p>Subject-wise practice sets with instant scoring — Python, Web Development, Aptitude and more.</p>
+            <span class="hub-box-arrow">Practice Now <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="interview/index.html" class="hub-box">
+            <span class="hub-box-badge">5 Guides</span>
+            <div class="hub-box-icon" aria-hidden="true">🎯</div>
+            <h3>Interview</h3>
+            <p>HR &amp; technical interview prep, resume tips, communication skills and common interview Q&amp;A.</p>
+            <span class="hub-box-arrow">Get Interview Ready <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="challenge/index.html" class="hub-box">
+            <span class="hub-box-badge">Live Now</span>
+            <div class="hub-box-icon" aria-hidden="true">🏆</div>
+            <h3>Challenge</h3>
+            <p>Join educational coding &amp; aptitude challenges and win real rewards with transparent results.</p>
+            <span class="hub-box-arrow">View Challenges <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="jobs/index.html" class="hub-box">
+            <span class="hub-box-badge">New</span>
+            <div class="hub-box-icon" aria-hidden="true">💼</div>
+            <h3>Jobs</h3>
+            <p>Discover fresher jobs, internships and referral opportunities curated for students like you.</p>
+            <span class="hub-box-arrow">Explore Jobs <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="other-courses/index.html" class="hub-box">
+            <span class="hub-box-badge">Coming Soon</span>
+            <div class="hub-box-icon" aria-hidden="true">🧩</div>
+            <h3>Other Courses</h3>
+            <p>DBMS, DSA, Networking, Operating Systems and more — new subjects added regularly.</p>
+            <span class="hub-box-arrow">See What's Next <span aria-hidden="true">→</span></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LATEST UPDATES ===================== -->
+    <section class="section section-alt" id="updates">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>Latest Updates</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card update-card">
+            <span class="update-date">05 Jul 2026</span>
+            <h3>New Python DSA course added</h3>
+            <p>A beginner-to-advanced Python course covering data structures &amp; algorithms is now live.</p>
+          </article>
+          <article class="card update-card">
+            <span class="update-date">01 Jul 2026</span>
+            <h3>Weekly Coding Challenge is back</h3>
+            <p>Fresh problems every Monday — participate and climb the leaderboard.</p>
+          </article>
+          <article class="card update-card">
+            <span class="update-date">28 Jun 2026</span>
+            <h3>Jobs section launched</h3>
+            <p>Browse fresher jobs and internships curated for students, updated regularly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>Never miss a course, quiz or challenge</h2>
+          <p>Get weekly updates on new courses, MCQ sets, challenges and job postings straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email address</label>
+          <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="form-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="about">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">
+          <span class="logo-bracket">&lt;</span>techbook4u<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>A free educational platform to learn, practice and compete — helping students turn preparation into real opportunities.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses/index.html">Courses</a></li>
+          <li><a href="mcq/index.html">MCQs</a></li>
+          <li><a href="interview/index.html">Interview Tips</a></li>
+          <li><a href="challenge/index.html">Challenges</a></li>
+          <li><a href="jobs/index.html">Jobs</a></li>
+          <li><a href="other-courses/index.html">Other Courses</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" id="contact">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@techbook4u.com">support@techbook4u.com</a></li>
+          <li>Mon–Sat, 10am – 6pm IST</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 techbook4u. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
